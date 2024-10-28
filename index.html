@@ -7,10 +7,37 @@
 </head>
 <body>
     <form>
-    <label for="firstname">first name:</label>
-    <input type="text" id="firstname" name="firstname"> <br>
+        <fieldset>
+            <legend>Personal informacion</legend>
+    <label for="firstname">first name:</label><br>
+    <input type="text" id="firstname" name="firstname" value="anid" readonly> <br>
     <label for="lastname">last name:</label> <br>
     <input type="text" id="lastname" name="lastname"> <br>
-    </form> 
+    <label for="email">email:</label><br>
+    <input type="email" id="email" name="email"> <br>
+    <label for="password">password:</label><br>
+    <input type="password" id="password" name="password" size="40" placeholder="password"> <br><br>
+    <label>Gender:</label><br>
+    <input type="radio" id="male" name="gender" value="male">
+    <label for="male"> Male</label><br>
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">Female</label><br><br>
+    <label>hobbies:</label><br>
+    <input type="checkbox" id="gaming" name="gaming" value="gaming">
+    <label for="gaming">gaming</label><br>
+    <input type="checkbox" id="football" name="gaming" value="football">
+    <label for="football">football</label><br>
+    <input type="checkbox" id="swiming" name="swiming" value="swiming">
+    <label for="swiming">swiming</label><br><br>
+    <select id="pet" naem="pet">
+        <option value="dog">dog</option>
+        <option value="cat">cat</option>
+        <option value="parrot">parrot</option>
+    </select><br><br>
+    <textarea name="message" rows="10" cols="20" maxlength="50"></textarea><br><br>
+    <input type="submit" id="submit" name="submit">
+    </fieldset>
+    </form>
+
 </body>
 </html>
